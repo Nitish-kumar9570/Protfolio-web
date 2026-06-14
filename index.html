@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nitish Kumar | Protfolio Web</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<!-- ✅ EmailJS CDN - MOVED TO HEAD (BEFORE usage) -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+
+<link rel="stylesheet" href="/Protfolio web/protfolio/style.css">
+
+</head>
+<body>
+ 
+<!-- MESH BACKGROUND -->
+<div id="mesh-bg">
+  <div class="mesh-orb orb1"></div>
+  <div class="mesh-orb orb2"></div>
+  <div class="mesh-orb orb3"></div>
+  <div class="mesh-orb orb4"></div>
+</div>
+<canvas id="bg-canvas"></canvas>
+ 
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="loader-inner">
+    <div class="loader-sig">Nitish Kumar</div>
+    <div class="loader-sub">Loading Experience…</div>
+  </div>
+</div>
+ 
+<!-- NAV -->
+<nav id="main-nav">
+  <div class="nav-c">
+    <a href="#home" class="logo">
+      <span class="logo-dot"></span>
+      Nitish Kumar
+    </a>
+    <div class="nav-right">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-btn" id="theme-btn" aria-label="Toggle theme"></button>
+      <a href="#contact" class="btn-cta nav-cta-desktop">Let's Talk</a>
+      <button class="menu-btn" id="menu-btn" aria-label="Menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+ 
+<main>
+ 
+<!-- HERO -->
+<section class="hero container" id="home">
+  <div class="hero-grid">
+    <div class="hero-text anim-up" style="animation-delay:.1s">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1>Building <span class="grad-text">Digital Skills</span><br>And Exprience.</h1>
+      <p>  I am highly interested in data analysis, Cyber Security (Bug Bounty Hunting - Beginner)and exploring new technologies to continuously improve my technical and problem-solving skills through real-world projects and practical learning.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-cta">View Projects <i class="fas fa-arrow-right"></i></a>
+        <a href="https://github.com/Nitish-kumar9570" target="_blank" class="btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Projects Built</span></div>
+        <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Years Learning</span></div>
+        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Certifications</span></div>
+      </div>
+    </div>
+    <div class="hero-card-wrap anim-scale" style="animation-delay:.25s;position:relative">
+      <div class="hero-card" id="tilt-card">
+        <div class="window-dots"><div class="wd wd1"></div><div class="wd wd2"></div><div class="wd wd3"></div></div>
+        <div class="code-body">
+          <div><span class="kw">const</span> <span class="prop">developer</span> = {</div>
+          <div>&nbsp;&nbsp;<span class="prop">name</span>: <span class="str">"Nitish Kumar"</span>,</div>
+          <div>&nbsp;&nbsp;<span class="prop">skills</span>: [<span class="str">"Python"</span>, <span class="str">"Bug Bounty"</span>, <span class="str">"C/C++ </span>],</div>
+          <div>&nbsp;&nbsp;<span class="prop">focus</span>: <span class="str">"Data Science + Cyber Security"</span>,</div>
+          <div>&nbsp;&nbsp;<span class="prop">hardWorker</span>: <span class="kw">true</span>,</div>
+          <div>&nbsp;&nbsp;<span class="prop">confidence</span>: <span class="num">Infinity</span></div>
+          <div>};</div>
+        </div>
+      </div>
+      <div class="float-chip chip-top">
+        <span class="chip-icon">🎓</span> BCA Student
+      </div>
+      <div class="float-chip chip-bot">
+        <span class="chip-icon">⚡</span> Open to Work
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ABOUT -->
+<section id="about" class="section container">
+  <div class="section-head anim-up">
+    <h2>About Me</h2>
+    <p>Who I am and what drives my passion for technology.</p>
+  </div>
+  <div class="about-grid">
+    <div class="about-img-wrap anim-scale">
+      <div class="about-img-box">
+        <!-- Placeholder: jab image nahi hai -->
+        <div class="about-img-placeholder">
+          <i class="fas fa-user-astronaut"></i>
+          <p>Add your photo here</p>
+        </div>
+        <!-- Image: jab photo daalo toh placeholder hata ke yeh daalo -->
+         <img src="/Protfolio web/image/Specilize.png" alt="Nitish Kumar" class="about-photo">
+      </div>
+    </div>
+    <div class="about-text anim-up">
+      <span class="about-tag">Who I am</span>
+      <h3>Nitish Kumar</h3>
+      <p>I'm <b>Nitish Kumar</b>, a <b>second-year BCA student</b> at Mangalayatan University and a passionate tech enthusiast with interests in <b>Data Analytics</b>, <b>Beginner Bug Bounty Hunting</b>, <b>Web Development</b>, and <b>Linux enthusiast</b>. I enjoy exploring modern technologies, building <b>interactive digital experiences</b>, and continuously improving my <b>problem-solving skills</b> through practical learning and real-world projects.</p>
+      <div class="skill-bars">
+        <div class="bar-item">
+          <div class="bar-head"><span class="bar-label">Python</span><span class="bar-pct">95%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="95"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-head"><span class="bar-label">Data Analysis</span><span class="bar-pct">88%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="88"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-head"><span class="bar-label">Cyber Security</span><span class="bar-pct">60%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="60"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-head"><span class="bar-label">SQL / Power BI</span><span class="bar-pct">80%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+        </div>
+      </div>
+      <div class="about-chips">
+        <div class="about-chip"><i class="fas fa-graduation-cap"></i> BCA, IT Student</div>
+        <div class="about-chip"><i class="fas fa-brain"></i> Creative Coder</div>
+        <div class="about-chip"><i class="fas fa-palette"></i> Linux</div>
+        <div class="about-chip"><i class="fas fa-chart-bar"></i> Bug Bounty Enthusiast</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- PROJECTS -->
+<section id="projects" class="section container">
+  <div class="section-head anim-up">
+    <h2>My Projects</h2>
+    <p>A selection of recent work and experiments.</p>
+  </div>
+  <div class="projects-grid">
+    <article class="proj-card anim-up" style="animation-delay:.1s">
+      <div class="proj-img">
+        <img src="/Protfolio web/image/Car_prediction_project.png" alt="Speech to Speech translatation">
+        <div class="proj-img-overlay"></div>
+      </div>
+      <div class="proj-body">
+        <h3><b>Car Price Prediction </b>(Machine Learning)</h3>
+        <p>The model is trained on historical car data and predicts the estimated resale price of a car.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">Streamlit</span>
+          <span class="proj-tag">Numpy</span>
+          <span class="proj-tag">Pandas</span>
+        </div>
+        <div class="proj-actions">
+          <a href="https://nitish-kumar9570-car-price-prediction-app-s2uvmr.streamlit.app/" class="proj-visit">Visit</a>
+          <a href="https://github.com/Nitish-kumar9570/Car-Price-Prediction/tree/main" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </article>
+    <article class="proj-card anim-up" style="animation-delay:.25s">
+      <div class="proj-img">
+        <img src="/Protfolio web/image/sales_predection.png" alt="AI Task Manager">
+        <div class="proj-img-overlay"></div>
+      </div>
+      <div class="proj-body">
+        <h3>Sales Prediction Dashboard (Machine Learning)</h3>
+        <p>Sales Prediction Dashboard built with Machine Learning and Streamlit for forecasting sales, analyzing advertising impact, and generating marketing insights through interactive visualizations.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">Regression</span>
+          <span class="proj-tag">streamlit</span>
+          <span class="proj-tag">matplotlib</span>
+        </div>
+        <div class="proj-actions">
+          <a href="https://nitish-kumar9570-sales-prediction-project-app-6t771l.streamlit.app/" class="proj-visit">Visit</a>
+          <a href="https://github.com/Nitish-kumar9570/sales_prediction_project/tree/main" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </article>
+    <article class="proj-card anim-up" style="animation-delay:.4s">
+      <div class="proj-img">
+        <img src="/Protfolio web/image/cafe_management.png" alt="Cafe Management System">
+        <div class="proj-img-overlay"></div>
+      </div>
+      <div class="proj-body">
+        <h3>Cafe Management System</h3>
+        <p>A terminal-based restaurant billing system that automates the ordering process. 
+          It manages a dynamic menu dictionary, handles multi-item cart additions with 
+          custom quantities, validates user inputs, and generates automated bill invoices 
+          with percentage-based discount logic.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">CLI Application</span>
+          <span class="proj-tag">Data Structures</span>
+        </div>
+        <div class="proj-actions">
+          <a href="#" class="proj-visit">Visit</a>
+          <a href="#" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </article>
+  </div>
+  <div class="view-all-btn anim-up">
+    <a href="https://github.com/Nitish-kumar9570" target="_blank">View All on GitHub <i class="fas fa-arrow-right"></i></a>
+  </div>
+</section>
+ 
+<!-- EDUCATION -->
+<section id="education" class="section container">
+  <div class="section-head anim-up">
+    <h2>Education</h2>
+    <p>My academic background and qualifications.</p>
+  </div>
+  <div class="edu-grid">
+    <div class="edu-card anim-scale" style="animation-delay:.3s">
+      <div class="edu-logo">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <h3>Bachelor of Computer Applications (BCA)</h3>
+      <h4>Mangalayatan University</h4>
+      <span class="edu-year">2024 - Appearing (2ⁿᵈ Year)</span>
+      <p class="edu-desc">Currently pursuing BCA with focus on Cyber Security and Data Analysis.</p>
+    </div>
+    <div class="edu-card anim-scale" style="animation-delay:.2s">
+      <div class="edu-logo">
+        <i class="fas fa-school"></i>
+      </div>
+      <h3>Bihar School Examination Board Patna</h3>
+      <h4>12ᵗʰ standard</h4>
+      <h4>Science • Mathematics</h4>
+      <span class="edu-year">2021 - 2023</span>
+      <p class="edu-desc">Completed 12ᵗʰ in Science (PCM) with strong foundation in Mathematics and logic.</p>
+    </div>
+    <div class="edu-card anim-scale" style="animation-delay:.1s">
+      <div class="edu-logo">
+        <i class="fas fa-school"></i>
+      </div>
+      <h3>Bihar School Examination Board Patna</h3>
+      <h4>10ᵗʰ standard</h4>
+      <span class="edu-year">2020 - 2021</span>
+      <p class="edu-desc">Successfully cleared the Class 10ᵗʰ Board Examinations with First Division honors.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section container">
+  <div class="section-head anim-up">
+    <h2>Certifications</h2>
+    <p>Verified skills and achievements.</p>
+  </div>
+  <div class="cert-grid">
+    <div class="cert-card anim-up" style="animation-delay:.1s">
+      <span class="cert-badge-pill">GOVERNMENT</span>
+      <div class="cert-icon">
+        <span style="display:flex;flex-direction:column;align-items:center;line-height:1;">
+          <span style="font-family:'Segoe UI',Arial,sans-serif;font-weight:900;font-size:17px;color:#E8451C;letter-spacing:2px;text-transform:uppercase;">Skill</span>
+          <span style="font-family:'Segoe UI',Arial,sans-serif;font-weight:300;font-size:17px;color:#1A237E;letter-spacing:3px;text-transform:uppercase;">India</span>
+        </span>
+      </div>
+      <h4>Cyber Security</h4>
+      <p class="cert-provider">Skill India - NSDC</p>
+      <p class="cert-desc">Certified in Cyber Security by Skill India, with knowledge of network security, ethical hacking fundamentals, vulnerability assessment, and data protection techniques.</p>
+      <a href="#" class="cert-link" data-cert="cyber-security" onclick="openCertModal(event, 'Cyber Security Certificate', '/Protfolio web/image/cretificate_skillindia.png')">View Credential <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="cert-card anim-up" style="animation-delay:.2s">
+      <span class="cert-badge-pill">2026</span>
+      <div class="cert-icon">
+        <span style="display:flex;align-items:baseline;gap:3px;">
+          <span style="font-family:'Poppins','Segoe UI',sans-serif;font-weight:300;font-size:14px;color:#0EA5E9;text-transform:uppercase;letter-spacing:1px;">Learning</span>
+          <span style="font-family:'Poppins','Segoe UI',sans-serif;font-weight:800;font-size:22px;color:#0284C7;">GT</span>
+        </span>
+      </div>
+      <h4>Generative AI for Business E-learning programme</h4>
+      <p class="cert-provider">Learning GT</p>
+      <p class="cert-desc">Completed the Generative AI for Business E-learning Programme, gaining practical knowledge of AI-driven tools, prompt engineering, and automation to improve business productivity, decision-making, and digital workflows.</p>
+      <a href="#" class="cert-link" data-cert="python" onclick="openCertModal(event, 'Generative AI for Business E-learning programme Certificate', '/Protfolio web/image/Certificate_of_completion_GenAI .png')">View Credential <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="cert-card anim-up" style="animation-delay:.3s">
+      <span class="cert-badge-pill">ADVANCED</span>
+      <div class="cert-icon">
+        <span style="display:flex;align-items:baseline;gap:2px;">
+          <span style="font-family:'Georgia','Times New Roman',serif;font-weight:700;font-size:16px;color:#7C3AED;font-style:italic;">Simpli</span>
+          <span style="font-family:'Poppins','Segoe UI',sans-serif;font-weight:400;font-size:16px;color:#7C3AED;letter-spacing:0.5px;">Learn</span>
+        </span>
+      </div>
+      <h4>Introduction to Artificial Intelligence</h4>
+      <p class="cert-provider">Simpli Learn</p>
+      <p class="cert-desc">Completed an introductory course in Artificial Intelligence, covering fundamental concepts such as machine learning, neural networks, data processing, and real-world AI applications.</p>
+      <a href="#" class="cert-link" data-cert="datascience" onclick="openCertModal(event, 'Introduction to Artificial Intelligence Certificate', '/Protfolio web/image/Artificial_intelligance.png')">View Credential <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="cert-card anim-up" style="animation-delay:.4s">
+      <span class="cert-badge-pill">VERIFIED</span>
+      <div class="cert-icon">
+        <span style="display:flex;flex-direction:column;align-items:center;line-height:1;">
+          <span style="font-family:'Segoe UI',Arial,sans-serif;font-weight:900;font-size:17px;color:#E8451C;letter-spacing:2px;text-transform:uppercase;">Skill</span>
+          <span style="font-family:'Segoe UI',Arial,sans-serif;font-weight:300;font-size:17px;color:#1A237E;letter-spacing:3px;text-transform:uppercase;">India</span>
+        </span>
+      </div>
+      <h4>Data Science</h4>
+      <p class="cert-provider">Skill India - NSDC</p>
+      <p class="cert-desc">User research, wireframing, prototyping, usability testing and design thinking process.</p>
+      <a href="#" class="cert-link" data-cert="data science" onclick="openCertModal(event, 'Data Science Certificate', '/Protfolio web/image/Appearing.png')">View Credential <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATE MODAL -->
+<div class="cert-modal-overlay" id="certModal">
+  <div class="cert-modal">
+    <button class="cert-modal-close" id="certCloseBtn" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="cert-modal-title" id="certModalTitle">Certificate Title</div>
+    <div class="cert-modal-image-container">
+      <img src="" alt="Certificate" id="certModalImage">
+      <div class="cert-zoom-indicator" id="certZoomIndicator">100%</div>
+    </div>
+    <div class="cert-modal-controls">
+      <button class="cert-modal-btn" id="certZoomOutBtn" aria-label="Zoom Out">
+        <i class="fas fa-search-minus"></i>
+      </button>
+      <button class="cert-modal-btn" id="certResetBtn" aria-label="Reset Zoom">
+        <i class="fas fa-compress-arrows-alt"></i>
+      </button>
+      <button class="cert-modal-btn" id="certZoomInBtn" aria-label="Zoom In">
+        <i class="fas fa-search-plus"></i>
+      </button>
+      <button class="cert-modal-btn" id="certDownloadBtn" aria-label="Download">
+        <i class="fas fa-download"></i>
+      </button>
+    </div>
+  </div>
+</div>
+ 
+<!-- RESUME SECTION -->
+<section id="resume" class="section container">
+  <div class="section-head anim-up">
+    <h2>Resume</h2>
+    <p>My professional journey in one document.</p>
+  </div>
+  <div class="resume-card anim-scale">
+    <div class="resume-icon">
+      <i class="fas fa-file-contract"></i>
+    </div>
+    <h3>Professional Resume</h3>
+    <p>
+      AI · Python · Data Science · Cyber Security · Web Development<br>
+      Actively looking for internships and freelance opportunities.
+    </p>
+    <div class="resume-actions">
+      <a href="/Protfolio web/resume/index.html" target="_blank" class="btn-outline">
+        <i class="fas fa-eye"></i> View Resume
+      </a>
+      <a href="/Protfolio web/download/Nitish kumar.pdf" download="Nitish_Kumar_Resume.pdf" class="btn-cta">
+        <i class="fas fa-download"></i> Download PDF
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section container">
+  <div class="section-head anim-up">
+    <h2>Let's Work Together</h2>
+    <p>Have a project in mind? Fill out the form or reach out directly.</p>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info-card anim-up" style="animation-delay:.1s">
+      <h3>Contact Info</h3>
+      <p>Available for work and internships. Let's build something great together.</p>
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <span>nk765435@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>India</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-clock"></i>
+        <span>Mon - Sat, 9am - 7pm IST</span>
+      </div>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/nitishkumar7654/" class="social-a li" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/Nitish-kumar9570" class="social-a gh" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/nitish_raj__95?igsh=MXAyMnBjcHczaWdjag==" class="social-a ig" title="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="contact-form-card anim-up" style="animation-delay:.2s">
+      <form id="contactForm">
+        <div class="form-group">
+          <input class="form-input" type="text" name="from_name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input class="form-input" type="email" name="from_email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea class="form-input" name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn-cta" id="sendBtn" style="width:100%;justify-content:center;border:none">
+          <span class="btn-text">Send Message</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+ 
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-name">Nitish Kumar</div>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/nitishkumar7654/" class="social-a li" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/Nitish-kumar9570" class="social-a gh" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/nitish_raj__95?igsh=MXAyMnBjcHczaWdjag==" class="social-a ig" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="copy">&copy; 2026 Nitish Kumar. Crafted with ❤️ and Code.</p>
+  </div>
+</footer>
+ 
+<div id="toast">Message sent successfully! 🚀</div>
+ 
+<script src="/Protfolio web/protfolio/script.js"></script>
+
+</body>
+</html>

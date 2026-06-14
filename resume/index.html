@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!--
+  <title>Nitish Kumar — Resume</title>
+  -->
+  <!-- SEO Optimization -->
+  <meta name="description" content="Professional tech resume of Nitish Kumar. Single-column classic LaTeX template optimized for Workday/Lever ATS crawlers and elite recruiters in Data Science & Cybersecurity.">
+  <meta name="keywords" content="Nitish Kumar, Resume, CV, Jake's Resume, LaTeX Style, Harvard Resume, ATS Friendly, BCA, Data Science, Cybersecurity, Python Developer, Aligarh, Mangalayatan University">
+  <meta name="author" content="Nitish Kumar">
+
+  <!-- Core Graphic Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. FLOATING CONTROL CONSOLE BAR (HIDDEN ON PRINT)
+       ========================================================================== -->
+  <header class="print-control-bar">
+    <div class="control-bar-title">
+      <i class="fas fa-file-invoice"></i>
+      <span>NITISH KUMAR &mdash; RESUME</span>
+    </div>
+    
+    <div class="control-actions">
+      <!-- High-visibility Export PDF button -->
+      <button class="btn-action btn-primary-action" onclick="window.print()" aria-label="Print or save resume as PDF">
+        <i class="fas fa-file-arrow-down"></i>
+        <span>Export PDF</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       2. CENTRAL A4 TYPESET RESUME PAPER 
+       ========================================================================== -->
+  <main class="resume-paper" id="resume-sheet">
+    
+    <!-- Copy helper hint -->
+    <div class="copy-helper-hint">
+      <i class="far fa-copy"></i> Click contact fields to copy
+    </div>
+
+    <!-- EXECUTIVE CONTACT HEADER -->
+    <header class="resume-header">
+      <h1 class="user-name">NITISH KUMAR</h1>
+      
+      <div class="contact-row">
+        <!-- Phone (Copy value) -->
+        <span class="contact-item" onclick="copyValue('+919570170283', 'Phone Number')" title="Click to copy Phone">
+          <i class="fas fa-phone"></i> +91 9570170283
+        </span>
+        <span class="separator">|</span>
+        <!-- Email (Copy value) -->
+        <span class="contact-item" onclick="copyValue('nk765435@gmail.com', 'Email Address')" title="Click to copy Email">
+          <i class="fas fa-envelope"></i> nk765435@gmail.com
+        </span>
+        <span class="separator">|</span>
+        <!-- GitHub Link -->
+        <a class="contact-item" href="https://github.com/Nitish-kumar9570" target="_blank" rel="noopener" title="Open GitHub Profile">
+          <i class="fab fa-github"></i> github.com/Nitish-kumar9570
+        </a>
+        <span class="separator">|</span>
+        <!-- LinkedIn Link -->
+        <a class="contact-item" href="https://www.linkedin.com/in/nitishkumar7654/" target="_blank" rel="noopener" title="Open LinkedIn Profile">
+          <i class="fab fa-linkedin"></i> linkedin.com/in/nitishkumar7654
+        </a>
+      </div>
+
+      <div class="location-badge">
+        Aligarh, Uttar Pradesh, India &bull; Seeking Research & Professional Internships
+      </div>
+    </header>
+
+    <!-- SECTION: PROFESSIONAL PROFILE -->
+    <section class="section-block">
+      <h2 class="section-heading">Professional Profile</h2>
+      <p class="objective-text">
+        Highly motivated Computer Science undergraduate (BCA) specializing in Data Science pipelines and Cyber Security audits. Capable in building intelligent automation scripts, configuring secure system models, and modeling predictive analytics frameworks using Python. Combines solid database management logic (DBMS) and hands-on exposure to vulnerability assessments on Kali Linux environments, aiming to deliver robust software architectures and contribute to advanced analytics and threat-hunting tasks.
+      </p>
+    </section>
+
+    <!-- SECTION: EDUCATION HISTORY -->
+    <section class="section-block">
+      <h2 class="section-heading">Education</h2>
+      
+      <!-- College -->
+      <article class="entry-card">
+        <div class="row-header">
+          <h3 class="row-title">Mangalayatan University</h3>
+          <span class="row-timeline">2024 &ndash; Present</span>
+        </div>
+        <div class="row-subheader">
+          <span class="row-subtitle">Bachelor of Computer Applications (BCA)</span>
+          <span class="row-location">Aligarh, UP</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Focusing on <b>computational logic, systems architecture, data science lifecycles, and relational database management (DBMS)</b>.</li>
+          <li>Configuring <b>system penetration testing setups (Kali Linux, Parrot OS)</b> to audit secure architectures and identify network vulnerabilities.</li>
+          <li>Utilizing Linux command scripts and relational SQL architectures to model data and configure environment assets.</li>
+        </ul>
+      </article>
+
+      <!-- Intermediate -->
+      <article class="entry-card">
+        <div class="row-header">
+          <h3 class="row-title">Bihar School Examination Board (BSEB)</h3>
+          <span class="row-timeline">2021 &ndash; 2023</span>
+        </div>
+        <div class="row-subheader">
+          <span class="row-subtitle">12th Standard — Intermediate (PCM Stream)</span>
+          <span class="row-location">Patna, Bihar</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Graduated with focus in Mathematics, Physics, and Chemistry.</li>
+          <li>Developed strong analytical capabilities, discrete arithmetic analysis skills, and algorithmic logic.</li>
+        </ul>
+      </article>
+
+      <!-- High school -->
+      <article class="entry-card">
+        <div class="row-header">
+          <h3 class="row-title">Bihar School Examination Board (BSEB)</h3>
+          <span class="row-timeline">2020 &ndash; 2021</span>
+        </div>
+        <div class="row-subheader">
+          <span class="row-subtitle">10th Standard — High School Matriculation</span>
+          <span class="row-location">Patna, Bihar</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="section-block">
+      <h2 class="section-heading">Technical Skills</h2>
+      <div class="skills-container">
+        
+        <div class="skills-row-block">
+          <span class="skills-category-lbl">Programming Languages: </span>
+          <div class="skills-badge-list">
+            <span class="skill-badge skill-badge-highlight">Python (Proficient)</span>
+            <span class="skill-badge">C++</span>
+            <span class="skill-badge">SQL</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">HTML5</span>
+            <span class="skill-badge">CSS3</span>
+          </div>
+        </div>
+
+        <div class="skills-row-block">
+          <span class="skills-category-lbl">Data Science & AI Libraries: </span>
+          <div class="skills-badge-list">
+            <span class="skill-badge">Data Analytics</span>
+            <span class="skill-badge">NumPy</span>
+            <span class="skill-badge">Pandas</span>
+            <span class="skill-badge">Matplotlib</span>
+            <span class="skill-badge">OpenCV (Computer Vision)</span>
+            <span class="skill-badge">Scikit-Learn</span>
+          </div>
+        </div>
+
+        <div class="skills-row-block">
+          <span class="skills-category-lbl">Cybersecurity & DevOps: </span>
+          <div class="skills-badge-list">
+            <span class="skill-badge skill-badge-highlight">Bug Bounty Hunting (Beginner)</span>
+            <span class="skill-badge">Vulnerability Assessment</span>
+            <span class="skill-badge">Kali Linux</span>
+            <span class="skill-badge">Parrot OS</span>
+            <span class="skill-badge">Prompt Engineering</span>
+            <span class="skill-badge">Bash Scripting</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: ACADEMIC PROJECTS (JAKE'S LATEX Tech TEMPLATE - FULLY OPEN BULLETS) -->
+    <section class="section-block">
+      <h2 class="section-heading">Academic Projects</h2>
+      
+      <!-- Project 1 -->
+      <article class="entry-card">
+        <div class="row-header">
+          <h3 class="row-title">Sales Prediction & Marketing Analytics Dashboard</h3>
+          <span class="row-timeline">2026</span>
+        </div>
+        <div class="row-subheader">
+          <span class="row-subtitle">Python &bull; Scikit-learn &bull; Streamlit &bull; Pandas &bull; Plotly</span>
+        </div>
+        <ul class="bullet-list">
+          <li><b>Developed</b> an end-to-end predictive analytics web application using Streamlit to forecast future sales and optimize multi-channel marketing spend.</li>
+          <li><b>Built and trained</b> a Linear Regression model using Scikit-learn to predict revenue based on advertising expenditures, audience segments, and platform metrics.</li>
+          <li><b>Conducted</b> extensive Exploratory Data Analysis (EDA) utilizing Pandas, Seaborn, and Plotly to engineer automated marketing strategy recommendations and trend visualizations.</li>
+        </ul>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="entry-card">
+        <div class="row-header">
+          <h3 class="row-title">Car Price Prediction System</h3>
+          <span class="row-timeline">2026</span>
+        </div>
+        <div class="row-subheader">
+          <span class="row-subtitle">Python &bull; Random Forest &bull; Scikit-learn &bull; Streamlit &bull; Pandas</span>
+        </div>
+        <ul class="bullet-list">
+          <li><b>Engineered</b> an end-to-end Machine Learning pipeline to predict the resale value of used cars based on vehicle age, mileage, fuel type, and transmission metrics.</li>
+          <li><b>Trained and optimized</b> a Random Forest Regressor model using Scikit-learn, implementing robust data preprocessing and feature engineering to maximize prediction accuracy.</li>
+          <li><b>Deployed</b> an interactive web application using Streamlit and Matplotlib, enabling users to receive real-time, data-driven automobile price estimations.</li>
+        </ul>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="entry-card">
+        <div class="row-header">
+          <h3 class="row-title">Interactive Portfolio Hub</h3>
+          <span class="row-timeline">2026</span>
+        </div>
+        <div class="row-subheader">
+          <span class="row-subtitle">HTML5 &bull; CSS3 &bull; JavaScript (ES6) &bull; GSAP &bull; EmailJS API</span>
+        </div>
+        <ul class="bullet-list">
+          <li><b>Designed and developed</b> a highly responsive developer portfolio featuring a modern glassmorphic UI, dynamic project galleries, and modal-based credential preview systems.</li>
+          <li><b>Engineered</b> immersive fluid animations, interactive micro-interactions, and a custom interactive starfield background utilizing GSAP, ScrollTrigger, and HTML5 Canvas APIs.</li>
+          <li><b>Integrated</b> dynamic browser-side configurations, including local-storage persistent dark/light theme toggles and a serverless contact form processed via EmailJS API hooks.</li>
+        </ul>
+      </article>
+
+    </section>
+
+    <!-- SECTION: PROFESSIONAL CERTIFICATIONS -->
+    <section class="section-block">
+      <h2 class="section-heading">Certifications</h2>
+      <ul class="bullet-list">
+        <li><b>Data Science Foundations</b> &ndash; Skill India (Completed)</li>
+        <li><b>Cyber Security Professional</b> &ndash; Skill India (Completed)</li>
+        <li><b>Generative AI for Business</b> &ndash; LearningGT (Completed)</li>
+      </ul>
+    </section>
+
+    <!-- SECTION: CORE COMPETENCIES -->
+    <section class="section-block">
+      <h2 class="section-heading">Core Competencies</h2>
+      <ul class="bullet-list">
+        <li><b>Analytical Problem Solving</b>: Experienced in analyzing complex data trends and debugging software issues.</li>
+        <li><b>Adaptive Technical Skills</b>: Dedicated to researching and mastering emerging data science tools, machine learning pipelines, and vulnerability assessments.</li>
+        <li><b>Collaboration & Communication</b>: Collaborative team member active in college coding clubs and academic projects.</li>
+      </ul>
+    </section>
+
+    <!-- SECTION: LANGUAGES & INTERESTS -->
+    <section class="section-block">
+      <h2 class="section-heading">Languages & Interests</h2>
+      <ul class="bullet-list">
+        <li><b>Languages</b>: English (Professional Proficiency), Hindi (Native / Bilingual)</li>
+        <li><b>Interests</b>: AI Automation, Cyber Security Audits, Bug Bounty Hunting, Speech Recognition systems</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Success Notifications Toast -->
+  <div class="clipboard-toast" id="clipboard-toast">
+    <i class="fas fa-circle-check"></i>
+    <span id="clipboard-toast-text">Copied successfully!</span>
+  </div>
+
+  <!-- Core Script Module -->
+  <script src="script.js"></script>
+</body>
+</html>
